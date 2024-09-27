@@ -1,71 +1,92 @@
 plugins:
   group:server:
-    server:
+    $collapsed: true
+    server:7ljzzp:
       port: 5140
       maxPort: 5149
-    ~server-satori: {}
-    ~server-temp: {}
+    ~server-satori:9njpc2: {}
+    ~server-temp:t3ua7f: {}
   group:basic:
-    ~admin: {}
-    ~bind: {}
-    commands: {}
-    help: {}
-    http: {}
-    ~inspect: {}
-    locales: {}
-    proxy-agent: {}
-    rate-limit: {}
-    telemetry: {}
+    $collapsed: true
+    admin:khjcau: {}
+    ~bind:weafqr: {}
+    commands:h2lbs1:
+      查看角色:
+        aliases:
+          查询: null
+    help:blybp0: {}
+    http:bgrt21: {}
+    ~inspect:3t9a1v: {}
+    locales:uisq24: {}
+    proxy-agent:sig673: {}
+    rate-limit:572boi: {}
+    telemetry:mehd5a: {}
   group:console:
-    actions: {}
-    analytics: {}
-    android:
+    $collapsed: true
+    actions:u47iwk: {}
+    analytics:050psm: {}
+    android:g3n97o:
       $if: env.KOISHI_AGENT?.includes('Android')
-    ~auth: {}
-    config: {}
-    console:
+    ~auth:ba5zxk: {}
+    config:tstj5s: {}
+    console:7vwnxx:
       open: true
-    dataview: {}
-    desktop:
+    dataview:2xhksl: {}
+    desktop:8ug3hw:
       $if: env.KOISHI_AGENT?.includes('Desktop')
-    explorer: {}
-    logger: {}
-    insight: {}
-    market:
+    explorer:imwq81: {}
+    logger:9vp4qb: {}
+    insight:k0bkrv: {}
+    market:jz2m56:
       search:
         endpoint: https://registry.koishi.chat/index.json
-    notifier: {}
-    oobe: {}
-    sandbox: {}
-    status: {}
-    theme-vanilla: {}
+    notifier:hyidq0: {}
+    oobe:ino5hp: {}
+    sandbox:oqf60q: {}
+    status:9ah3zs: {}
+    theme-vanilla:i8bg1j: {}
   group:storage:
-    ~database-mongo:
+    $collapsed: true
+    ~database-mongo:ee4shz:
       database: koishi
-    ~database-mysql:
+    ~database-mysql:aupu98:
       database: koishi
-    ~database-postgres:
+    ~database-postgres:qppa2c:
       database: koishi
-    database-sqlite:
+    database-sqlite:c4jruh:
       path: data/koishi.db
-    assets-local: {}
+    assets-local:o7bm3c: {}
   group:adapter:
-    ~adapter-dingtalk: {}
-    ~adapter-discord: {}
-    ~adapter-kook: {}
-    ~adapter-lark: {}
-    ~adapter-line: {}
-    ~adapter-mail: {}
-    ~adapter-matrix: {}
-    ~adapter-qq: {}
-    ~adapter-satori: {}
-    ~adapter-slack: {}
-    ~adapter-telegram: {}
-    ~adapter-wechat-official: {}
-    ~adapter-wecom: {}
-    ~adapter-whatsapp: {}
-    ~adapter-zulip: {}
+    $collapsed: true
+    ~adapter-dingtalk:nof12e: {}
+    ~adapter-discord:7m7iuw: {}
+    ~adapter-kook:p5vfdi: {}
+    ~adapter-lark:98g73t: {}
+    ~adapter-line:kkh794: {}
+    ~adapter-mail:rbvrkz: {}
+    ~adapter-matrix:5fdzp4: {}
+    ~adapter-qq:a65gck: {}
+    ~adapter-satori:ngfw3l: {}
+    ~adapter-slack:i2v09n: {}
+    ~adapter-telegram:ar6fms: {}
+    ~adapter-wechat-official:sy7ltw: {}
+    ~adapter-wecom:0h711b: {}
+    ~adapter-whatsapp:e0p1nv: {}
+    ~adapter-zulip:pz4qvl: {}
   group:develop:
+    $collapsed: true
     $if: env.NODE_ENV === 'development'
-    hmr:
-      root: '.'
+    hmr:pwypf1:
+      root: .
+  adapter-onebot:ini2sy:
+    selfId: '2935453536'
+    endpoint: ws://127.0.0.1:6548
+    protocol: ws
+  qq-management-tool:nz1yjs:
+    BotBaesAdministrator:
+      - '1433675239'
+    EnableGroup:
+      - '121416879'
+  ~qqgroup-manager:glgm9i: {}
+nickname:
+  - 萌萌
