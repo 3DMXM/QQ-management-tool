@@ -31,3 +31,5 @@ tsconfig.tsbuildinfo
 *.sln
 .yarn
 .vscode
+
+yarn.lock
